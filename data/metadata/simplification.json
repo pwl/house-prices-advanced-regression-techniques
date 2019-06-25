@@ -1,0 +1,66 @@
+{
+    "Alley": {
+        "Gravel": "Yes",
+        "Paved": "Yes"
+    },
+    "BldgType": {
+        "Two-family Conversion; originally built as one-family dwelling": "Two Family",
+        "Duplex": "Two Family",
+        "Townhouse End Unit": "Townhouse",
+        "Townhouse Inside Unit": "Townhouse"
+    },
+    "Exterior1st": {
+        "Vinyl Siding": "Vinyl",
+        "Metal Siding": "Metal",
+        "Hard Board": "Wood",
+        "Wood Siding": "Wood",
+        "Plywood": "Wood",
+        "Cement Board": "Cement",
+        "Brick Face": "Brick",
+        "Wood Shingles": "Wood",
+        "Asbestos Shingles": "Asbestos",
+        "Brick Common": "Other",
+        "Stone": "Other",
+        "Cinder Block": "Other",
+        "Asphalt Shingles": "Other",
+        "Imitation Stucco": "Stucco"
+    },
+    "Exterior2nd": {
+        "Vinyl Siding": "Vinyl",
+        "Metal Siding": "Metal",
+        "Hard Board": "Wood",
+        "Wood Siding": "Wood",
+        "Plywood": "Wood",
+        "Cement Board": "Cement",
+        "Brick Face": "Brick",
+        "Wood Shingles": "Wood",
+        "Asbestos Shingles": "Asbestos",
+        "Brick Common": "Other",
+        "Stone": "Other",
+        "Cinder Block": "Other",
+        "Asphalt Shingles": "Other",
+        "Imitation Stucco": "Stucco"
+    },
+    "Condition1": {
+        "Normal": "NaN",
+        "Adjacent to feeder street": "Street",
+        "Adjacent to arterial street": "Street",
+        "Adjacent to North-South Railroad": "Railroad",
+        "Near positive off-site feature--park, greenbelt, etc.": "Feature",
+        "Adjacent to East-West Railroad": "Railroad",
+        "Adjacent to postive off-site feature": "Feature",
+        "Within 200' of North-South Railroad": "Railroad",
+        "Within 200' of East-West Railroad": "Railroad"
+    },
+    "Condition2": {
+        "Normal": "NaN",
+        "Adjacent to feeder street": "Street",
+        "Adjacent to arterial street": "Street",
+        "Adjacent to North-South Railroad": "Railroad",
+        "Near positive off-site feature--park, greenbelt, etc.": "Feature",
+        "Adjacent to East-West Railroad": "Railroad",
+        "Adjacent to postive off-site feature": "Feature",
+        "Within 200' of North-South Railroad": "Railroad",
+        "Within 200' of East-West Railroad": "Railroad"
+    }
+}
