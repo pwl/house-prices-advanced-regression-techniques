@@ -1,0 +1,137 @@
+{
+    "LotShape": {
+        "Regular": 3,
+        "Slightly irregular": 2,
+        "Moderately Irregular": 1,
+        "Irregular": 0
+    },
+    "LandSlope": {
+        "Gentle slope": 2,
+        "Moderate Slope": 1,
+        "Severe Slope": 0
+    },
+    "ExterQual": {
+        "Excellent": 4,
+        "Good": 3,
+        "Average/Typical": 2,
+        "Fair": 1,
+        "Poor": 0
+    },
+    "ExterCond": {
+        "Excellent": 4,
+        "Good": 3,
+        "Average/Typical": 2,
+        "Fair": 1,
+        "Poor": 0
+    },
+    "BsmtQual": {
+        "Excellent (100+ inches)": 4,
+        "Good (90-99 inches)": 3,
+        "Typical (80-89 inches)": 2,
+        "Poor (<70 inches": 1,
+        "Fair (70-79 inches)": 0
+    },
+    "BsmtCond": {
+        "Excellent": 4,
+        "Good": 3,
+        "Typical - slight dampness allowed": 2,
+        "Fair - dampness or some cracking or settling": 1,
+        "Poor - Severe cracking, settling, or wetness": 0
+    },
+    "BsmtExposure": {
+        "Good Exposure": 3,
+        "Average Exposure (split levels or foyers typically score average or above)": 2,
+        "Mimimum Exposure": 1,
+        "No Exposure": 0
+    },
+    "BsmtFinType1": {
+        "Good Living Quarters": 6,
+        "Average Living Quarters": 5,
+        "Below Average Living Quarters": 4,
+        "Average Rec Room": 3,
+        "Low Quality": 2,
+        "Unfinshed": 1
+    },
+    "BsmtFinType2": {
+        "Good Living Quarters": 6,
+        "Average Living Quarters": 5,
+        "Below Average Living Quarters": 4,
+        "Average Rec Room": 3,
+        "Low Quality": 2,
+        "Unfinshed": 1
+    },
+    "HeatingQC": {
+        "Excellent": 4,
+        "Good": 3,
+        "Average/Typical": 2,
+        "Fair": 1,
+        "Poor": 0
+    },
+    "CentralAir": {
+        "No": false,
+        "Yes": true
+    },
+    "KitchenQual": {
+        "Excellent": 4,
+        "Good": 3,
+        "Typical/Average": 2,
+        "Fair": 1,
+        "Poor": 0
+    },
+    "Functional": {
+        "Typical Functionality": 7,
+        "Minor Deductions 1": 6,
+        "Minor Deductions 2": 5,
+        "Moderate Deductions": 4,
+        "Major Deductions 1": 3,
+        "Major Deductions 2": 2,
+        "Severely Damaged": 1,
+        "Salvage only": 0
+    },
+    "FireplaceQu": {
+        "Excellent - Exceptional Masonry Fireplace": 4,
+        "Good - Masonry Fireplace in main level": 3,
+        "Average - Prefabricated Fireplace in main living area or Masonry Fireplace in basement": 2,
+        "Fair - Prefabricated Fireplace in basement": 1,
+        "Poor - Ben Franklin Stove": 0
+    },
+    "GarageFinish": {
+        "Finished": 3,
+        "Rough Finished": 2,
+        "Unfinished": 1,
+        "No Garage": 0
+    },
+    "GarageQual": {
+        "Excellent": 4,
+        "Good": 3,
+        "Typical/Average": 2,
+        "Fair": 1,
+        "Poor": 0
+    },
+    "GarageCond": {
+        "Excellent": 4,
+        "Good": 3,
+        "Typical/Average": 2,
+        "Fair": 1,
+        "Poor": 0
+    },
+    "PavedDrive": {
+        "Paved": 2,
+        "Partial Pavement": 1,
+        "Dirt/Gravel": 0
+    },
+    "PoolQC": {
+        "Excellent": 4,
+        "Good": 3,
+        "Average/Typical": 2,
+        "Fair": 1,
+        "No Pool": 0
+    },
+    "Fence": {
+        "Good Privacy": 4,
+        "Minimum Privacy": 3,
+        "Good Wood": 2,
+        "Minimum Wood/Wire": 1,
+        "No Fence": 0
+    }
+}

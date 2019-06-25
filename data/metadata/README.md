@@ -1,0 +1,4 @@
+- `spelling.json`: Fixes the spellings, apply to the raw data
+- `expanded.json`: Expanded (human readable) categorical values.  Apply after fixing the spellin.
+- `qualitative.json`: Convert some categorical features to qualitative ones (typically grading: Poor, Average, Good, etc.)
+- `descriptions.json`: Contains human-readable feature descriptions

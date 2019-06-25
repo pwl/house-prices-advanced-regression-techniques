@@ -1,0 +1,12 @@
+{
+    "BldgType":{
+        "Twnhs": "TwnhsI",
+        "2fmCon": "2FmCon",
+        "Duplex": "Duplx"
+    },
+    "Exterior2nd":{
+        "CmentBd": "CemntBd",
+        "Wd Shng": "WdShing",
+        "Brk Cmn": "BrkComm"
+    }
+}
