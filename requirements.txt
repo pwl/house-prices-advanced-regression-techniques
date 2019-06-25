@@ -1,0 +1,6 @@
+pandas
+sklearn
+sklearn-pandas
+category_encoders
+mlxtend
+kaggle
