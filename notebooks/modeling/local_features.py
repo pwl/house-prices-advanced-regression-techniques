@@ -26,15 +26,22 @@ def month_to_categorical(data):
 
 
 def merge_conditions(data):
-    cond1 = pd.get_dummies(data["Condition1"], prefix="Condition", dtype="bool")
-    cond2 = pd.get_dummies(data["Condition2"], prefix="Condition", dtype="bool")
-    return data.drop(["Condition1", "Condition2"], axis=1).join(cond1 | cond2)
+    cond1 = pd.get_dummies(data["Condition1"], prefix="Condition")
+    cond2 = pd.get_dummies(data["Condition2"], prefix="Condition")
+    return (
+        data.drop(["Condition1", "Condition2"], axis=1)
+        .join(cond1.add(cond2, fill_value=0))
+        .drop("Condition_Normal", axis=1)
+    )
 
 
 def merge_exterior(data):
-    cond1 = pd.get_dummies(data["Exterior1st"], prefix="Exterior", dtype="bool")
-    cond2 = pd.get_dummies(data["Exterior2nd"], prefix="Exterior", dtype="bool")
-    return data.drop(["Exterior1st", "Exterior2nd"], axis=1).join(cond1 | cond2)
+    cond1 = pd.get_dummies(data["Exterior1st"], prefix="Exterior")
+    cond2 = pd.get_dummies(data["Exterior2nd"], prefix="Exterior")
+    data = data.drop(["Exterior1st", "Exterior2nd"], axis=1).join(
+        cond1.add(cond2, fill_value=0)
+    )
+    return data
 
 
 def add_relative_rooms(data):
@@ -86,6 +93,9 @@ def add_features(data, replacements_quant={}, replacements_cat={}):
 
     # no object columns
     assert not (data.dtypes == "object").any()
+
+    # no constant columns
+    assert (data.std() > 0).all()
 
     return data
 

@@ -19,7 +19,7 @@
         "Brick Face": "Brick",
         "Wood Shingles": "Wood",
         "Asbestos Shingles": "Asbestos",
-        "Brick Common": "Other",
+        "Brick Common": "Brick",
         "Stone": "Other",
         "Cinder Block": "Other",
         "Asphalt Shingles": "Other",
@@ -35,14 +35,13 @@
         "Brick Face": "Brick",
         "Wood Shingles": "Wood",
         "Asbestos Shingles": "Asbestos",
-        "Brick Common": "Other",
+        "Brick Common": "Brick",
         "Stone": "Other",
         "Cinder Block": "Other",
         "Asphalt Shingles": "Other",
         "Imitation Stucco": "Stucco"
     },
     "Condition1": {
-        "Normal": "NaN",
         "Adjacent to feeder street": "Street",
         "Adjacent to arterial street": "Street",
         "Adjacent to North-South Railroad": "Railroad",
@@ -53,7 +52,6 @@
         "Within 200' of East-West Railroad": "Railroad"
     },
     "Condition2": {
-        "Normal": "NaN",
         "Adjacent to feeder street": "Street",
         "Adjacent to arterial street": "Street",
         "Adjacent to North-South Railroad": "Railroad",
