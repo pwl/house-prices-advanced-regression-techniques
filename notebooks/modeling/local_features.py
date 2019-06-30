@@ -53,6 +53,33 @@ def add_relative_rooms(data):
     return data
 
 
+def to_log(data):
+    cols = [
+        "MiscVal",
+        "OpenPorchSF",
+        "1stFlrSF",
+        "GrLivArea",
+        "ScreenPorch",
+        "GarageArea",
+        "TotalBsmtSF",
+        "LotArea",
+        "LowQualFinSF",
+        "EnclosedPorch",
+        "2ndFlrSF",
+        "BsmtUnfSF",
+        "WoodDeckSF",
+        "BsmtFinSF2",
+        "LotFrontage",
+        "MasVnrArea",
+        "PoolArea",
+        "3SsnPorch",
+        "BsmtFinSF1",
+    ]
+    for col in cols:
+        data[col + "_log"] = np.log1p(data[col])
+    return data.drop(cols, axis=1)
+
+
 def add_features(data, replacements_quant={}, replacements_cat={}):
     """Adds new local features (features based only on the current
     row).
@@ -79,6 +106,7 @@ def add_features(data, replacements_quant={}, replacements_cat={}):
         .pipe(merge_exterior)
         .pipe(month_to_categorical)
         .pipe(add_relative_rooms)
+        .pipe(to_log)
         .drop(["Utilities"], axis=1)  # utilities have no diversity at all
     )
 
